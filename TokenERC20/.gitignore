@@ -1,0 +1,15 @@
+# Ignore zeppelin contracts
+node_modules/
+
+# Ignore build stuff
+cache/
+build/
+dist/
+
+
+# Ignore test coverage
+coverage/
+coverage.json
+
+.env
+.vscode

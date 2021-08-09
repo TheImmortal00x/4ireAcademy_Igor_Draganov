@@ -62,9 +62,9 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    ropsten: {
-    provider: () => new HDWalletProvider(privateKey, infuraURL),
-    network_id: 3,       // Ropsten's id
+    rinkeby: {
+    provider: () => new HDWalletProvider("d54a990fc4ef045f08263aaf5da629a252cf57aa68da720160c107083eb6f255", "wss://rinkeby.infura.io/ws/v3/89e3f948348b4872a28005921f526192"),
+    network_id: 4,       // Ropsten's id
     gas: 5500000,        // Ropsten has a lower block limit than mainnet
     confirmations: 2,    // # of confs to wait between deployments. (default: 0)
     timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
@@ -108,6 +108,6 @@ module.exports = {
     enabled: false
   },
   api_keys: {
-    etherscan: process.env.ETHERSCAN_API_KEY,
+    etherscan: process.env.EtherscanApiKey,
   },
 };
